@@ -2,7 +2,7 @@ title: Microsoft Office Product Spawning Windows Shell
 description: Detects a Windows command and scripting interpreter executable started from Microsoft Word, Excel, Powerpoint, Publisher and Visio
 author: Michael Haag, Florian Roth, Markus Neis, Elastic, FPT.EagleEye Team
 date: 2018/04/06
-modified: 2021/11/27
+modified: 2022/02/22
 mitre: 
    tactic: Execution
    technique: 
