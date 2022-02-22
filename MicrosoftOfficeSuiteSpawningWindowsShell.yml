@@ -8,7 +8,7 @@ mitre:
    technique: 
    subtechnique: T1204
 operating_system: windows
-query: SrcProcName In Contains Anycase ("EXCEL.EXE","WINWORD.EXE","POWERPNT.EXE","MSPUB.EXE","VISIO.EXE","MSACCESS.EXE","EQNEDT32.EXE") AND TgtProcName In Contains Anycase ("powershell.exe","cmd.exe","wsript.exe","cscript.exe","sh.exe","bash.exe","scrcons.exe","schtasks.exe","regsvr32.exe","regsvr32.exe","hh.exe","wmic.exe","mshta.exe","rundll32.exe","msiexec.exe","forfiles.exe","scriptrunner.exe","mftrace.exe","AppVLP.exe","svhost.exe","msbuild.exe")
+query: SrcProcName In Contains Anycase ("EXCEL.EXE","WINWORD.EXE","POWERPNT.EXE","MSPUB.EXE","VISIO.EXE","MSACCESS.EXE","EQNEDT32.EXE","OUTLOOK.EXE") AND TgtProcName In Contains Anycase ("powershell.exe","cmd.exe","wsript.exe","cscript.exe","sh.exe","bash.exe","scrcons.exe","schtasks.exe","regsvr32.exe","regsvr32.exe","hh.exe","wmic.exe","mshta.exe","rundll32.exe","msiexec.exe","forfiles.exe","scriptrunner.exe","mftrace.exe","AppVLP.exe","svhost.exe","msbuild.exe") AND TgtProcCmdLine Does Not Contain "PhotoViewer.dll"
 false_positives: null
 tags:
    - attack.execution
